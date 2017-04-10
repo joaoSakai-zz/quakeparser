@@ -2,7 +2,7 @@
 
 ### Installation Guide ###
 
-**QuakeParser API use Redis as Cache Manager! Please install see the Install Redis section to continue this guide.**
+**QuakeParser API use Redis as Cache Manager! See the Install Redis section to continue this guide.**
 
 After Redis Installation run the command:
 
