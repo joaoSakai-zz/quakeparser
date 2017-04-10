@@ -4,8 +4,8 @@
 
 **QuakeParser API use Redis as Cache Manager! See the Install Redis section to continue this guide.**
 
-After Redis Installation run the command:
 
+Clone the Repo and run the command:
 
 ```
 #!shell
