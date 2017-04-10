@@ -13,7 +13,8 @@ Clone the Repo and run the command:
 mvn clean install spring-boot:run
 ```
 
-To test the API use this REST API end point
+QuakeParser API 
+
 
 **GET**        <host>:9010/game             - *Get all games keys*
 
