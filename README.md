@@ -23,7 +23,7 @@ QuakeParser API
 **GET**        <host>:9010/game/{id}        - *Get game data*
 
 
-### Install Redis Section ###
+### Installation Redis Section ###
 *Linux*
 
 ```
