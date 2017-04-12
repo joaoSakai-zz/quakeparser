@@ -1,14 +1,16 @@
 package com.joaosakai.parser;
-
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.springframework.boot.test.context.ConfigFileApplicationContextInitializer;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.io.IOException;
 
 /**
  * Created by joao.sakai on 4/6/17.
  */
+@ContextConfiguration(classes = GameParser.class, initializers = ConfigFileApplicationContextInitializer.class)
 public class GameParserTest {
 
     private static GameParser logParser;
@@ -18,23 +20,8 @@ public class GameParserTest {
         logParser = new GameParser();
     }
 
-    @AfterClass
-    public static void down() {
-
-    }
-
-    private String getGameLogFile() {
-        return "games.log";
-    }
-
-    @Test(expected = IOException.class)
-    public void testFileNotExists() throws IOException {
-        final String wrongFile = "wrongFile";
-        logParser.parse(wrongFile);
-    }
-
     @Test
-    public void testCorrectFile() throws IOException {
-        logParser.parse(getGameLogFile());
+    public void testGameLogParser() throws IOException {
+        logParser.parse();
     }
 }

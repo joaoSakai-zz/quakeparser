@@ -1,7 +1,7 @@
 package com.joaosakai.model;
 
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 /**
  * Created by joao.sakai
@@ -10,11 +10,11 @@ public class Game {
 
     private int totalKills;
 
-    private Set<Player> players;
+    private List<String> players;
 
-    private List<Kill> kills;
+    private Map kills;
 
-    public Game(int totalKills, Set<Player> players, List<Kill> kills) {
+    public Game(int totalKills, List<String> players, Map<String, Integer> kills) {
         this.totalKills = totalKills;
         this.players = players;
         this.kills = kills;
@@ -28,19 +28,19 @@ public class Game {
         this.totalKills = totalKills;
     }
 
-    public Set<Player> getPlayers() {
+    public List<String> getPlayers() {
         return players;
     }
 
-    public void setPlayers(Set<Player> players) {
+    public void setPlayers(List<String> players) {
         this.players = players;
     }
 
-    public List<Kill> getKills() {
+    public Map getKills() {
         return kills;
     }
 
-    public void setKills(List<Kill> kills) {
+    public void setKills(Map kills) {
         this.kills = kills;
     }
 }
